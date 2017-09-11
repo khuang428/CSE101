@@ -1,0 +1,38 @@
+stdout: ========================================================================
+Part 1: compute()
+========================================================================
+
+Test #1: x = 9, y = 2
+------------------------------------------------------------------------
+Function arguments: 
+    x = 9
+    y = 2
+Expected return value: 91
+Actual return value:   91
+Return value correct. (+5.00 / 5.00)
+Test passed.
+
+Test #2: x = 0, y = 4
+------------------------------------------------------------------------
+Function arguments: 
+    x = 0
+    y = 4
+Expected return value: 16
+Actual return value:   16
+Return value correct. (+5.00 / 5.00)
+Test passed.
+
+Test #3: x = -8, y = -2
+------------------------------------------------------------------------
+Function arguments: 
+    x = -8
+    y = -2
+Expected return value: 62
+Actual return value:   62
+Return value correct. (+5.00 / 5.00)
+Test passed.
+
+Part 1 Score: 15.00 / 15.00
+
+
+stderr: 
