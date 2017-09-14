@@ -1,6 +1,6 @@
-# your name
-# your NetID
-# your SBU ID number
+# Karen Huang
+# KARHUANG
+# 111644515
 # CSE 101
 # Homework #1
 
@@ -12,27 +12,35 @@ import math
 
 # Part I
 def compute(x, y):
-    return None
-
+    return (x * y) / (y + 2) - (y / x)
 
 # Part II
 def find_area(r):
-    return None
+    areaC = 3.14 * (r**2)
+    areaS = 2 * (r**2)
+    return areaC - areaS
 
 
 # Part III
 def gas_refill(dis, mins, price, total_mins):
-    return None
+    speed = dis / mins
+    total_dis = speed * total_mins
+    gals = total_dis / 20
+    return gals * price
 
 
 # Part IV
 def heat_transfer(m, c, initial, final):
-    return None
+    heat = m * c * (final - initial)
+    return (heat / 4.18) / m
 
 
 # Part V
 def rocket_area(c, r, h, b):
-    return None
+    cone = math.pi * r * (math.sqrt(r**2 + c**2))
+    triangles = 2 * b**2
+    cylinder = math.pi * r**2 + math.pi * 2 * r * h
+    return cone + triangles + cylinder
 
 
 # Below you will see an if-statement and a few tests. It is REALLY important
