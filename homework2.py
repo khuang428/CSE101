@@ -30,9 +30,9 @@ def temperature_converter(value, scale_from, scale_to):
     if scale_from == scale_to:
         return value
     elif scale_from == 'C' and scale_to == 'K':
-        return value + 273
+        return value + 273.15
     elif scale_from == 'K' and scale_to == 'C':
-        return value - 273
+        return value - 273.15
     elif scale_from == 'C' and scale_to == 'F':
         return ((value * 9) / 5) + 32
     elif scale_from == 'F' and scale_to == 'C':
@@ -62,14 +62,41 @@ def row_boat(movements):
 
 # Part IV
 def untangle(numbers, len_of_sublist):
-    return None
+    retList = []
+    nums = []
+    k = len(numbers) // len_of_sublist #number of sublists
+    n = 0
+    for i in range(k):
+        for j in range(len(numbers)):
+            if j % k == n:
+                nums.append(numbers[j])
+        retList.append(nums)
+        nums = []
+        n += 1
+    return retList
 
 
 # Part V
 def car_rental(rentals):
     car_type = [0, 0, 0, 0]  # Income generated Sedan, Coupe, SUV, Hybrid (in that order)
-
-    return None
+    for data in rentals:
+        if data[0] == 'Student':
+            data[2] -= 3
+        elif data[0] == 'Faculty':
+            data[2] -= 2
+        elif data[0] == 'Visitor':
+            data[2] -=1
+        if data[2] < 0:
+            data[2] = 0
+        if data[1] == 'Sedan':
+            car_type[0] += data[2] * 10
+        elif data[1] == 'Coupe':
+            car_type[1] += data[2] * 12
+        elif data[1] == 'SUV':
+            car_type[2] += data[2] *13
+        elif data[1] == 'Hybrid':
+            car_type[3] += data[2] * 15
+    return car_type
 
 
 if __name__ == '__main__':

@@ -128,9 +128,9 @@ if __name__ == '__main__':
 
     # Testing Part IV
     name_test = 'kmac'
-    experience_test = 0
-    base_pay_test = 100000
-    age_test = 100
+    experience_test = 17
+    base_pay_test = 50000
+    age_test = 90
 
     print('Testing company_policy() for name = ' + name_test + ' experience = ' + str(experience_test) +
           ' base_pay = ' + str(base_pay_test) + ' age = ' + str(age_test) + ': '+
