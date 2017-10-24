@@ -84,7 +84,7 @@ if __name__ == '__main__':
     print("Testing session_simulator() with clients = [5, 5], regular = 10: " + str(session_simulator([5, 5], 10)))
     print("Testing session_simulator() with clients = [1, 5, 4, 11], regular = 10: " + str(
         session_simulator([1, 5, 4, 11], 10)))
-    print("Testing session_simulator() with clients = [5, 7, 5, 6], regular = 10: " + str(
+    print("Testing session_simulator() with clients = [5, 7, 5, 6], regular = 20: " + str(
         session_simulator([5, 7, 5, 6], 20)))
     print("Testing with clients = [10, 2, 14, 15, 13, 6, 3, 7, 12, 8], regular = 9: " + str(
         session_simulator([10, 2, 14, 15, 13, 6, 3, 7, 12, 8], 9)))
